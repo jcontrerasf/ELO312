@@ -757,3 +757,24 @@ org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
 
 !ENTRY org.eclipse.cdt.core 1 0 2020-03-05 16:06:40.090
 !MESSAGE Indexed 'sesion3timers' (26 sources, 103 headers) in 2,7 sec: 9.211 declarations; 43.327 references; 2 unresolved inclusions; 37 syntax errors; 145 unresolved names (0,28 %)
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-05 16:41:39.608
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.general.runtimelib.725259680' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-05 16:41:39.611
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.mcu.1788732384' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-05 16:41:39.613
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.vendor.1633381220' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-05 16:41:39.633
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.general.runtimelib.1872229282' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-05 16:41:39.635
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.mcu.195837752' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-05 16:41:39.637
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.vendor.525834413' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.hardwaredebug.launch 2 0 2020-03-05 17:13:54.991
+!MESSAGE Won't launch debug session since we failed to locate the binary.
