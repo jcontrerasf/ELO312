@@ -908,3 +908,39 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 13:52:50.905
 !MESSAGE sesion3 needs property 'com.atollic.truestudio.toolchain_options.vendor.362480155' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 17:35:10.051
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.1988593608' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 17:35:10.066
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.1046805324' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 17:35:10.066
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.1092935322' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 17:35:10.113
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.351883071' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 17:35:10.113
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.734868248' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 17:35:10.113
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.1346681307' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 18:21:13.637
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.1909762450' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 18:21:13.642
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.302938233' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 18:21:13.642
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.1964099100' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 18:21:13.667
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.582334722' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 18:21:13.667
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.392440388' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 18:21:13.667
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.672763288' fixed. Fixing to 'STMicroelectronics'.

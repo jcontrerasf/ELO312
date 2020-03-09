@@ -49,7 +49,7 @@
 
 /* USER CODE BEGIN PV */
 
-double data;
+//double data;
 
 /* USER CODE END PV */
 
@@ -96,8 +96,9 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_ADC1_Init();
-  //HAL_ADC_Start_IT(&hadc1) //esto es para el 1.3 !!!!!!!!!!!!!!!!!!!
   /* USER CODE BEGIN 2 */
+
+  HAL_ADC_Start_IT(&hadc1);
 
   /* USER CODE END 2 */
 
@@ -105,11 +106,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_ADC_Start(&hadc1); //asumiendo que previamente se definió ADC_HandleTypeDef hadc1
+    /*HAL_ADC_Start(&hadc1); //asumiendo que previamente se definió ADC_HandleTypeDef hadc1
     HAL_ADC_PollForConversion(&hadc1, 100); //instrucción bloqueante para esperar como máximo
                                             //100ms antes de pasar a la siguiente instrucción
     data = (double) HAL_ADC_GetValue(&hadc1); //asumiendo que previamente se definió double data
-    HAL_Delay(50); //insertar un delay si es necesario
+    HAL_Delay(50); //insertar un delay si es necesario*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

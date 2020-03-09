@@ -8,18 +8,26 @@
 
 //esto es para el 1.3 !!!!!!!!!!!!!!!!!!!
 
- HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*) //no se si esta bien el *
+#include "my_it_callbacks.h"
+
+static volatile uint16_t data;
+double promedio;
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) //no se si esta bien el *
  {
-   if(hadc->Instance == adc1) //aquí poner el ADC que se está usando
+   if(hadc->Instance == ADC1) //aquí poner el ADC que se está usando
    {
-    prender_leds(promedio_ultimos((double) HAL_ADC_GetValue(&hadc1)));
+    data = HAL_ADC_GetValue(&hadc1);
+    promedio = promedio_ultimos((double) HAL_ADC_GetValue(&hadc1));
+    prender_leds(data);
+    HAL_ADC_Start_IT(&hadc1);
    }
 
  }
 
  double promedio_ultimos(double ultimo)
  {
-   static double lista[4] = {0,0,0,0,0};
+   static double lista[5];
 
    lista[4] = lista[3];
    lista[3] = lista[2];
@@ -32,40 +40,43 @@
 
 void prender_leds(double valor)
 {
-  HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_pin|out6_Pin|out7_Pin|out8_Pin,GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin|out7_Pin|out8_Pin,GPIO_PIN_RESET);
   //primero se resetean todos los leds
 
-  if(valor < 0.41 && valor > 0.1) //intervalos de 3.3/8
-  {                               //creo que no es bueno comparar puntos flotantes con cero
+  if(valor == 0)
+  {
+    HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin|out7_Pin|out8_Pin,GPIO_PIN_RESET);
+  }
+  else if(valor < 500) //intervalos de 4033/8
+  {
     HAL_GPIO_WritePin(GPIOA,out1_Pin,GPIO_PIN_SET);
   }
-  else if(valor < 0.82)
+  else if(valor < 1000)
   {
     HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin,GPIO_PIN_SET);
   }
-  else if(valor < 1.23)
+  else if(valor < 2000)
   {
     HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin,GPIO_PIN_SET);
   }
-  else if(valor < 1.65)
+  else if(valor < 2500)
   {
     HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin,GPIO_PIN_SET);
   }
-  else if(valor < 2)
+  else if(valor < 3000)
   {
     HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin,GPIO_PIN_SET);
   }
-  else if(valor < 2.47)
+  else if(valor < 3500)
   {
     HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin,GPIO_PIN_SET);
   }
-  else if(valor < 2.89)
+  else if(valor < 4000)
   {
-    HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin|out7_Pin,GPIO_PIN_SET)
+    HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin|out7_Pin,GPIO_PIN_SET);
   }
   else
   {
-    HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin|out7_Pin|out8_Pin,GPIO_PIN_SET)
+    HAL_GPIO_WritePin(GPIOA,out1_Pin|out2_Pin|out3_Pin|out4_Pin|out5_Pin|out6_Pin|out7_Pin|out8_Pin,GPIO_PIN_SET);
   }
 }
-
