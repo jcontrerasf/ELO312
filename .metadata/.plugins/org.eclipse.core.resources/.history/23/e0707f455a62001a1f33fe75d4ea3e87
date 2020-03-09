@@ -1,0 +1,27 @@
+/*
+ * my_it_callbacks.c
+ *
+ *  Created on: 09-03-2020
+ *      Author: julio
+ */
+
+
+//esto es para el 1.3 !!!!!!!!!!!!!!!!!!!
+
+#include "my_it_callbacks.h"
+
+static volatile uint16_t data;
+static volatile uint8_t brillo;
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+ {
+   if(hadc->Instance == ADC1) //aquí poner el ADC que se está usando
+   {
+    data = HAL_ADC_GetValue(&hadc1);
+    brillo = (int)0.478*data;
+    __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, brillo); // valor para duty cycle 50%
+    HAL_ADC_Start_IT(&hadc1);
+   }
+
+ }
+
