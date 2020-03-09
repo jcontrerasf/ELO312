@@ -1,0 +1,28 @@
+/*
+ * my_it_callbacks.c
+ *
+ *  Created on: 09-03-2020
+ *      Author: julio
+ */
+
+ HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*) //no se si esta bien el *
+ {
+   if(hadc->Instance == adc1) //aquí poner el ADC que se está usando
+   {
+    //aquí poner lo que se quiere realizar
+   }
+
+ }
+
+ double promedio_ultimos(double ultimo)
+ {
+   static double lista[4] = {0,0,0,0,0};
+
+   lista[4] = lista[3];
+   lista[3] = lista[2];
+   lista[2] = lista[1];
+   lista[1] = lista[0];
+   lista[4] = ultimo;
+
+   return (lista[0]+lista[1]+lista[2]+lista[3]+lista[4])/5;
+ }
