@@ -50,7 +50,7 @@
 
 /* USER CODE BEGIN PV */
 
-uint16_t value = 1;
+double value = 1.0;
 uint8_t msg[20] = "";
 uint8_t dat[4] = {'o','k','\r','\n'};
 
@@ -107,11 +107,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    sprintf((char*)msg, "%d\r\n", value);
+    sprintf((char*)msg, "%f\r\n", value);
     HAL_UART_Transmit(&huart2, msg, 10, 100);
     //HAL_UART_Transmit(&huart2, dat, 4, 10);
     HAL_Delay(250);
-    value += 1;
+    value += 0.001;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

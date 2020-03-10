@@ -50,7 +50,7 @@
 
 /* USER CODE BEGIN PV */
 
-uint16_t value = 1;
+uint8_t value = 1;
 uint8_t msg[20] = "";
 uint8_t dat[4] = {'o','k','\r','\n'};
 
