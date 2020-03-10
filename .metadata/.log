@@ -1235,3 +1235,474 @@ org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
 
 !ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 19:25:48.594
 !MESSAGE sesion4pwm needs property 'com.atollic.truestudio.toolchain_options.vendor.1007241002' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.516
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.244956121' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.519
+!MESSAGE sesion5 needs property 'FPU' fixed. Fixing from 'com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16' to 'com.atollic.truestudio.common_options.target.fpucore.None'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.521
+!MESSAGE sesion5 needs property 'FPU' fixed. Fixing from 'com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16' to 'com.atollic.truestudio.common_options.target.fpucore.None'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.524
+!MESSAGE sesion5 needs property 'FPU' fixed. Fixing from 'com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16' to 'com.atollic.truestudio.common_options.target.fpucore.None'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.556
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.2088646047' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.559
+!MESSAGE sesion5 needs property 'FPU' fixed. Fixing from 'com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16' to 'com.atollic.truestudio.common_options.target.fpucore.None'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.561
+!MESSAGE sesion5 needs property 'FPU' fixed. Fixing from 'com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16' to 'com.atollic.truestudio.common_options.target.fpucore.None'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:06.563
+!MESSAGE sesion5 needs property 'FPU' fixed. Fixing from 'com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16' to 'com.atollic.truestudio.common_options.target.fpucore.None'.
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:06.584
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:357)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:256)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:480)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:06.588
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:357)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:256)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:480)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:06.595
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:357)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:256)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:480)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:06.598
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:357)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:256)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:480)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:06.607
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:609)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:561)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:06.800
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:609)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:561)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:07.083
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:609)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:561)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:07.280
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:609)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:561)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:07.621
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:137)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:846)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:573)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:523)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:519)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$2(CProjectDescriptionManager.java:517)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:07.626
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:137)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:846)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:573)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:523)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:519)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$2(CProjectDescriptionManager.java:517)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:07.634
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:137)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:846)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:573)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:523)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:519)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$2(CProjectDescriptionManager.java:517)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2020-03-09 21:31:07.637
+!MESSAGE Failed to generate command
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.getMcpuForMcu(McuOptionCommandGenerator.java:43)
+	at com.atollic.truestudio.mbs.McuOptionCommandGenerator.generateCommand(McuOptionCommandGenerator.java:62)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.addGeneratedCommand(GCCSpecsDetectorAtollicArm.java:194)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerArguments(GCCSpecsDetectorAtollicArm.java:160)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getArgsFromToolchain(GCCSpecsDetectorAtollicArm.java:127)
+	at com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm.getCompilerCommand(GCCSpecsDetectorAtollicArm.java:94)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:308)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.calculateEnvHash(AbstractBuiltinSpecsDetector.java:422)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.validateEnvironment(AbstractBuiltinSpecsDetector.java:466)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.execute(AbstractBuiltinSpecsDetector.java:481)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.registerListener(AbstractBuiltinSpecsDetector.java:375)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.reRegisterListeners(LanguageSettingsProvidersSerializer.java:1375)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:386)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:137)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:846)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:573)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:523)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:519)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$2(CProjectDescriptionManager.java:517)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:07.768
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.2144357306' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:07.771
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1558032559' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:07.774
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.313311739' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:07.795
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.869610656' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:07.797
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.611688534' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:31:07.799
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.494634539' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-09 21:31:12.067
+!MESSAGE Indexed 'sesion5' (30 sources, 108 headers) in 3,1 sec: 10.764 declarations; 65.922 references; 2 unresolved inclusions; 37 syntax errors; 145 unresolved names (0,19 %)
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:39:00.523
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1019976624' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:39:00.525
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1191966860' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:39:00.527
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1011159103' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:39:00.547
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1299698284' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:39:00.550
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.331482627' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:39:00.552
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.27284299' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:40:59.424
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1076200694' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:40:59.427
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.502616415' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:40:59.429
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1724444637' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:40:59.447
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1498602703' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:40:59.450
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1303303575' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 21:40:59.452
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1849368361' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 22:14:53.294
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1757131944' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 22:14:53.297
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1573331612' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 22:14:53.299
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1672139658' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 22:14:53.325
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.555542782' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 22:14:53.327
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1581702719' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-09 22:14:53.330
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1127115781' fixed. Fixing to 'STMicroelectronics'.
