@@ -1,0 +1,24 @@
+/*
+ * my_it_callbacks.c
+ *
+ *  Created on: 10-03-2020
+ *      Author: julio
+ */
+
+
+#include "my_it_callbacks.h"
+
+uint8_t dat[4] = {'o','k','\r','\n'};
+static uint8_t buffer_2[10];
+
+void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
+{
+
+ if(huart->Instance == USART2)
+ {
+   HAL_GPIO_WritePin(GPIOC,out1_Pin,GPIO_PIN_SET);
+   HAL_UART_Transmit(&huart2, dat, 4, 10);
+ }
+ HAL_UART_Receive_IT(&huart2, buffer_2, 10);
+}
+

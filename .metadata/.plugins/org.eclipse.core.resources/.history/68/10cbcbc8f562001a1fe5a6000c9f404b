@@ -1,0 +1,23 @@
+/*
+ * my_it_callbacks.c
+ *
+ *  Created on: 10-03-2020
+ *      Author: julio
+ */
+
+
+#include "my_it_callbacks.h"
+
+
+
+void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
+{
+
+
+ if(huart->Instance == USART2)
+ {
+   HAL_GPIO_WritePin(GPIOC,out1_Pin,GPIO_PIN_SET);
+ }
+
+}
+

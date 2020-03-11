@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="out" key="selection"/>
+		<item value="Init" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="init"/>
+			<item value="power"/>
+			<item value="sleep"/>
+			<item value="__HAL_TIM_SET_COMPARE"/>
+			<item value="getvalue"/>
+			<item value="read "/>
+			<item value="read"/>
 			<item value="LED_"/>
-			<item value="led"/>
-			<item value="HAL_GPIO_EXTI"/>
-			<item value="HAL_GPIO"/>
-			<item value="PERIPH_BASE"/>
-			<item value="AHB2PERIPH_BASE"/>
-			<item value="gpioc_base"/>
-			<item value="delay"/>
 		</list>
 		<list key="replacehistory">
 			<item value="out"/>

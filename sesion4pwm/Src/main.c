@@ -99,6 +99,7 @@ int main(void)
 
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
   HAL_ADC_Start_IT(&hadc1);
+  //__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, 980);
 
   /* USER CODE END 2 */
 

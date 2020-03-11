@@ -25,17 +25,17 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
   HAL_GPIO_TogglePin(GPIOA, out1_Pin);
 
-  if(tim_interrupt_counter%5 == 0)
+  if(tim_interrupt_counter%2 == 0)
     {
       HAL_GPIO_TogglePin(GPIOA, out2_Pin);
     }
 
-  if(tim_interrupt_counter%10 == 0)
+  if(tim_interrupt_counter%5 == 0)
   {
     HAL_GPIO_TogglePin(GPIOA, out3_Pin);
   }
 
-  if(tim_interrupt_counter%20 == 0)
+  if(tim_interrupt_counter%10 == 0)
     {
       HAL_GPIO_TogglePin(GPIOA, out4_Pin);
     }
