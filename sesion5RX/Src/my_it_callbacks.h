@@ -15,4 +15,6 @@
 #include "usart.h"
 #include "gpio.h"
 
+extern uint8_t data;  //muy importante para usar data en main.c
+
 #endif /* MY_IT_CALLBACKS_H_ */

@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
+#include "my_it_callbacks.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,14 +48,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
-//uint8_t buffer[10];
-uint16_t value = 1;
-uint8_t msg[20] = "";
-uint8_t buffer_2[10];
-uint8_t interrupciones = 0;
-uint8_t indice = 0;
-uint8_t data;
 
 /* USER CODE END PV */
 
@@ -175,40 +168,6 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
-{
-
- if(huart->Instance == USART2)
- {
-   if(indice == 0)
-   {
-     for (int i = 0; i < 10; i++) {
-      buffer_2[i] = 0;
-    }
-   }
-   if(data != 10) //10 es \n en ascii
-   {
-     buffer_2[indice++] = data;
-   }
-   else
-   {
-     indice = 0;
-     interrupciones += 1;
-     //HAL_UART_Transmit(&huart2, buffer_2, sizeof(buffer_2), 100);
-     //HAL_GPIO_TogglePin(GPIOA,LD2_Pin);
-     if(buffer_2[0] == 'o' && buffer_2[1] == 'n') //al enviar on\n  se prende
-     {
-       HAL_GPIO_WritePin(GPIOA,LD2_Pin,GPIO_PIN_SET);
-     }
-     else if(buffer_2[0] == 'o' && buffer_2[1] == 'f' && buffer_2[2] == 'f') //al enviar off\n se apaga
-     {
-       HAL_GPIO_WritePin(GPIOA,LD2_Pin,GPIO_PIN_RESET);
-     }
-   }
-   HAL_UART_Receive_IT(&huart2, &data, 1);
- }
-
-}
 
 /* USER CODE END 4 */
 
