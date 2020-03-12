@@ -13,7 +13,6 @@
 #include "main.h"
 #include "adc.h"
 #include "tim.h"
-#include "usart.h"
 #include "gpio.h"
 
 #endif /* MY_IT_CALLBACKS_H_ */

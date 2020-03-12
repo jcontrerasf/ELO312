@@ -22,7 +22,6 @@
 #include "main.h"
 #include "adc.h"
 #include "tim.h"
-#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -91,15 +90,18 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
 
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
-  HAL_ADC_Start_IT(&hadc1);
-  //__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, 980);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); //rojo
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2); //verde
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3); //azul
+  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1, 1960);
+  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, 1960);
+  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3, 1960);
+
 
   /* USER CODE END 2 */
 
@@ -107,6 +109,42 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    for(uint16_t i=1960; i>0; i--) //verde up
+        {
+          __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, i);
+          HAL_Delay(3);
+        }
+    HAL_Delay(200);
+        for(uint16_t i=1960; i>0; i--) //azul up
+            {
+              __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3, i);
+              HAL_Delay(3);
+            }
+     HAL_Delay(200);
+         for(uint16_t i=1960; i>0; i--) //rojo up
+             {
+               __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1, i);
+               HAL_Delay(3);
+             }
+         HAL_Delay(200);
+         for(uint16_t i=0; i<1960; i++) //verde down
+             {
+               __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, i);
+               HAL_Delay(3);
+             }
+         HAL_Delay(200);
+         for(uint16_t i=0; i<1960; i++) //azul down
+                      {
+                        __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3, i);
+                        HAL_Delay(3);
+                      }
+         HAL_Delay(200);
+         for(uint16_t i=0; i<1960; i++) //rojo down
+                      {
+                        __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1, i);
+                        HAL_Delay(3);
+                      }
+         HAL_Delay(200);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -153,8 +191,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2|RCC_PERIPHCLK_ADC;
-  PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
   PeriphClkInit.AdcClockSelection = RCC_ADCCLKSOURCE_PLLSAI1;
   PeriphClkInit.PLLSAI1.PLLSAI1Source = RCC_PLLSOURCE_HSI;
   PeriphClkInit.PLLSAI1.PLLSAI1M = 1;

@@ -6,7 +6,6 @@
  */
 
 
-//esto es para el 1.3 !!!!!!!!!!!!!!!!!!!
 
 #include "my_it_callbacks.h"
 
@@ -14,7 +13,7 @@ static volatile uint16_t data;
 static volatile float brillo;
 static volatile int brillo_int;
 
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+/*void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
  {
    if(hadc->Instance == ADC1) //aquí poner el ADC que se está usando
    {
@@ -26,4 +25,4 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
    }
 
  }
-
+*/
