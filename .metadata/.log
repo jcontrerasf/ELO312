@@ -3349,3 +3349,6 @@ org.eclipse.cdt.managedbuilder.core.BuildException: Can't find MCU STM32L476RG
 
 !ENTRY com.atollic.truestudio.mbs 2 0 2020-03-12 15:07:48.810
 !MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.vendor.1765435526' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-12 17:54:03.348
+!MESSAGE Unloading product manager

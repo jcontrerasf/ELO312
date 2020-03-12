@@ -93,13 +93,20 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(GPIOC,LED_azul_Pin,GPIO_PIN_SET); //se apaga el led al principio (negado)
+  HAL_GPIO_WritePin(GPIOC,LED_azul_Pin,GPIO_PIN_RESET); //se apaga el led al principio (negado)
+  HAL_UART_Receive_IT(&huart2, &data, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    /*if(flag > 0)
+    {
+      HAL_Delay(500);
+      HAL_GPIO_WritePin(GPIOC,LED_azul_Pin,GPIO_PIN_RESET);
+      flag = 0;
+    }*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

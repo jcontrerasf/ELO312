@@ -15,6 +15,9 @@
 #include "usart.h"
 #include "gpio.h"
 
+extern uint8_t data;  //muy importante para usar data en main.c
+extern uint8_t flag;
+
 void HAL_GPIO_EXTI_Callback(uint16_t);
 
 
