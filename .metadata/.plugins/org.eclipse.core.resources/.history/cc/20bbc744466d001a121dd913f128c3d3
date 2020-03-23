@@ -1,0 +1,33 @@
+/*
+ * it_callbacks.c
+ *
+ *  Created on: 23-03-2020
+ *      Author: julio
+ */
+
+#include "it_callbacks.h"
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  static uint8_t contador = 0;
+  if(*htim == &htim2)
+  {
+    if(contador == 4)
+    {
+      contador = 0;
+    }
+    else
+    {
+      contador += 1;
+    }
+    switch (contador) {
+      case 0:
+        __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
+        __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
+
+        break;
+      default:
+        break;
+    }
+  }
+}
