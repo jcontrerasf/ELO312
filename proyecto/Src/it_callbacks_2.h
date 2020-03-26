@@ -14,9 +14,9 @@
 #include "adc.h"
 #include "tim.h"
 #include "usart.h"
-#include <ctype.h>
-#include <stdio.h>
 #include <string.h>
+
+int es_num(int num);
 
 extern uint8_t data;  //muy importante para usar data en main.c
 
