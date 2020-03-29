@@ -2,7 +2,7 @@
  * it_callbacks.h
  *
  *  Created on: 23-03-2020
- *      Author: julio
+ *      Author: Grupo 10 - Paralelo 1 ELO312 2019-2
  */
 
 #ifndef IT_CALLBACKS_H_
