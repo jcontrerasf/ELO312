@@ -2,49 +2,51 @@
  * it_callbacks.c
  *
  *  Created on: 23-03-2020
- *      Author: julio
+ *      Author: Grupo 10 - Paralelo 1 ELO312 2019-2
+ *
+
+  _ _               _ _ _                _
+ (_) |_    ___ __ _| | | |__   __ _  ___| | _____
+ | | __|  / __/ _` | | | '_ \ / _` |/ __| |/ / __|
+ | | |_  | (_| (_| | | | |_) | (_| | (__|   <\__ \
+ |_|\__|  \___\__,_|_|_|_.__/ \__,_|\___|_|\_\___/
+
+
+ * Este archivo contiene las funciones que se ejecutan cuando ocurren las interrupciones
  */
 
 #include "it_callbacks.h"
 
-const uint16_t segmentos[10] = {0x80,0xF2,0x48,0x60,0x32,0x24,0x04,0xF0,0x00,0x20};
+
+int brillo = 0;
+uint8_t *mostrar;
+
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  static uint8_t contador = 0;
-  //contador para indicar que digito mostrar
-  if(contador == 3)
+  if(htim->Instance == TIM2) // Timer que se está usando
   {
-    contador = 0;
+    G10_7segmentos_mostrar(GPIOB, mostrar, brillo);
+    HAL_ADC_Start_IT(&hadc1); // se inicia la conversion del ADC con interrupciones
   }
-  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
-  //prender un digito a la vez
-  switch (contador) {
-    case 0:
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 0);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 1960);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 1960);
-      break;
-    case 1:
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 0);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 1960);
-      break;
-    case 2:
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 1960);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 0);
-      break;
-    default:
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 0);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 0);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 0);
-      break;
+}
+
+
+void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
+{
+ if(huart->Instance == USART2)  // USART que se está usando
+ {
+   G10_uart_recibir();
+   mostrar = G10_uart_procesar();
+   HAL_UART_Receive_IT(&huart2, &data, 1); //se reinicia la recepcion
+ }
+}
+
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+  if(hadc->Instance == ADC1) // ADC que se está usando
+  {
+    brillo = G10_adc_leer_brillo(&hadc1);
   }
-  //definir los segmentos a mostrar
-  uint8_t mostrar[3] = {1,2,0}; // esta variable debe provenir desde la uart
-
-  HAL_GPIO_WritePin(GPIOC, segmentos[mostrar[contador]], GPIO_PIN_SET);
-
-  contador += 1;
 }

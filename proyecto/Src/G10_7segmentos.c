@@ -55,7 +55,7 @@ const uint16_t segmentos[11] = {
     a_Pin|b_Pin|c_Pin,                          // 7
     a_Pin|b_Pin|c_Pin|d_Pin|e_Pin|f_Pin|g_Pin,  // 8
     a_Pin|b_Pin|c_Pin|d_Pin|f_Pin|g_Pin,        // 9
-    0,                                          // null
+    0,                                          // todos los segmentos apagados
 };
 
 /*
@@ -67,7 +67,7 @@ const uint16_t segmentos[11] = {
  * @param brillo: brillo de los digitos. Admite valores entre 0 (maximo brillo) y 1960 (minimo brillo).
  */
 
-void G10_7segmentos_mostrar(GPIO_TypeDef* GPIOx, int brillo)
+void G10_7segmentos_mostrar(GPIO_TypeDef* GPIOx, uint8_t* mostrar , int brillo)
 {
     static uint8_t contador = 0;  //contador para indicar que digito mostrar
 

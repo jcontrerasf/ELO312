@@ -9,6 +9,11 @@
 #define G10_7SEGMENTOS_H_
 
 //includes
+#include "stdint.h"
+#include "gpio.h"
+#include "main.h"
+#include "adc.h"
+#include "tim.h"
 
 
 //Prototipos de funciones

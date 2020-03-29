@@ -2,16 +2,35 @@
  * G10_adc.c
  *
  *  Created on: 28-03-2020
- *      Author: julio
+ *      Author: Grupo 10 - Paralelo 1 ELO312 2019-2
+
+
+     _    ____   ____
+    / \  |  _ \ / ___|
+   / _ \ | | | | |
+  / ___ \| |_| | |___
+ /_/   \_\____/ \____|
+
+
  */
 
 #define offset -25658.2
 #define slope 8.90909
 
-
-int G10_adc_leer_valor()
+/*
+ * @brief Lee el valor desde la fotorresistencia conectada al ADC y lo convierte
+ * @note  offset y slope se usan para la conversion de datos y dependen de la luz ambiente
+ *        y la calidad de la fotorresistencia.
+ * @param hadc: ADC handle
+ * @retval brillo en variable de tipo int en el rango valido para G10_7segmentos_mostrar().
+ */
+int G10_adc_leer_brillo(ADC_HandleTypeDef *hadc)
 {
-  adc_val = HAL_ADC_GetValue(&hadc1);
+  static volatile uint16_t adc_val;
+  static volatile float brillo;
+  static volatile int brillo_int;
+
+  adc_val = HAL_ADC_GetValue(hadc);
   brillo = 1960 - (adc_val*slope + offset);
   brillo_int = (int)brillo;
   if (brillo_int > 1960)

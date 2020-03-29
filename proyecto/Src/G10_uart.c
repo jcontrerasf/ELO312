@@ -3,20 +3,30 @@
  *
  *  Created on: 28-03-2020
  *      Author: Grupo 10 - Paralelo 1 ELO312 2019-2
+
+
+  _   _   _    ____ _____
+ | | | | / \  |  _ \_   _|
+ | | | |/ _ \ | |_) || |
+ | |_| / ___ \|  _ < | |
+  \___/_/   \_\_| \_\|_|
+
+
  */
 
 #include "G10_uart.h"
 
 uint8_t data;
-uint8_t mostrar[3] = {10,10,0};
+static char buffer[10];
+
+
+/*
+ * @brief Acumula en un buffer los datos recibidos por UART
+ */
 
 void G10_uart_recibir() //Basado en: https://www.youtube.com/watch?v=VdHt_wJdezM
 {
-  static char buffer[10];
   static uint8_t indice = 0;
-  uint8_t dig1[5] = "uno\r\n";
-  uint8_t dig2[5] = "dos\r\n";
-  uint8_t dig3[6] = "tres\r\n";
 
   if (indice == 0)                  // \ .
      {                              //  |
@@ -32,12 +42,21 @@ void G10_uart_recibir() //Basado en: https://www.youtube.com/watch?v=VdHt_wJdezM
      else
      {
        indice = 0;
-       return buffer;
      }
 }
 
+/*
+ * @brief Procesa los datos del buffer para definir el angulo del servo y mostrar el valor en el display
+ * @retval puntero al array que debe mostrarse.
+ */
 
-int G10_uart_procesar(){
+uint8_t* G10_uart_procesar(){
+
+  uint8_t dig1[5] = "uno\r\n";
+  uint8_t dig2[5] = "dos\r\n";
+  uint8_t dig3[6] = "tres\r\n";
+  static uint8_t mostrar[3] = {10,10,0};
+
   if (strlen(buffer) < 4)
          {
            if(G10_uart_es_num(buffer[0]) && G10_uart_es_num(buffer[1]) && G10_uart_es_num(buffer[2]))
@@ -72,14 +91,21 @@ int G10_uart_procesar(){
            }
          }
 
-
          angulo = 300 - ((float)valor/15)*19;
          __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_2, angulo);
+
+         return mostrar;
 }
 
-int G10_uart_es_num(int num)
+/*
+ * @brief Detecta si el caracter corresponde a un numero
+ * @param num: caracter a analizar
+ * @retval 1 si es un numero, 0 si no
+ */
+
+uint8_t G10_uart_es_num(uint8_t num)
 {
-  if(num >= 48 && num <= 57)
+  if(num >= '0' && num <= '9')
   {
     return 1;
   }

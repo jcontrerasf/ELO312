@@ -17,7 +17,7 @@
 
 //variables globales
 extern uint8_t data;
-extern uint8_t mostrar[3];
+//extern uint8_t mostrar[3];
 
 
 //prototipos de funciones
