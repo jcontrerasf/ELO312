@@ -5406,3 +5406,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.626
 !MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.vendor.1563481232' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-28 23:50:35.513
+!MESSAGE Unloading product manager

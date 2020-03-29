@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="buffer" key="selection"/>
+		<item value="es_num" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="es_num"/>
 			<item value="buffer_2"/>
 			<item value="buffer"/>
 			<item value="buffer "/>
@@ -15,9 +16,9 @@
 			<item value="power"/>
 			<item value="sleep"/>
 			<item value="__HAL_TIM_SET_COMPARE"/>
-			<item value="getvalue"/>
 		</list>
 		<list key="replacehistory">
+			<item value="G10_uart_es_num"/>
 			<item value="buffer"/>
 			<item value="out"/>
 		</list>

@@ -61,28 +61,34 @@ uint8_t* G10_uart_procesar(){
          {
            if(G10_uart_es_num(buffer[0]) && G10_uart_es_num(buffer[1]) && G10_uart_es_num(buffer[2]))
            {
-            HAL_UART_Transmit(&huart2, dig3, 6, 100);
-            mostrar[0] = (int)buffer[0] - 48;
-            mostrar[1] = (int)buffer[1] - 48;
-            mostrar[2] = (int)buffer[2] - 48;
+            HAL_UART_Transmit(&huart2, dig3, 6, 100); //se envia un mensaje de verificacion
+            /*
+            * Una manera sencilla de convertir un caracter numerico a un entero es restarle 48, porque '0'=48 en ASCII.
+            * Ejemplo: '1' es el caracter 49 -> 49-48=1.
+            * Sin embargo, para evitar el uso de "magic numbers" se restará '0' en vez de 48, aunque es lo mismo.
+            */
+            mostrar[0] = (int)buffer[0] - '0';
+            mostrar[1] = (int)buffer[1] - '0';
+            mostrar[2] = (int)buffer[2] - '0';
            }
            else if(G10_uart_es_num(buffer[0]) && G10_uart_es_num(buffer[1]))
            {
-            HAL_UART_Transmit(&huart2, dig2, 5, 100);
-            mostrar[2] = (int)buffer[1] - 48;
-            mostrar[1] = (int)buffer[0] - 48;
+            HAL_UART_Transmit(&huart2, dig2, 5, 100); //se envia un mensaje de verificacion
+            mostrar[2] = (int)buffer[1] - '0';
+            mostrar[1] = (int)buffer[0] - '0';
             mostrar[0] = 0;
            }
            else if(G10_uart_es_num(buffer[0]))
            {
-            HAL_UART_Transmit(&huart2, dig1, 5, 100);
-            mostrar[2] = (int)buffer[0] - 48;
+            HAL_UART_Transmit(&huart2, dig1, 5, 100); //se envia un mensaje de verificacion
+            mostrar[2] = (int)buffer[0] - '0';
             mostrar[1] = 0;
             mostrar[0] = 0;
            }
 
            valor = mostrar[0]*100 + mostrar[1]*10 + mostrar[2];
-           if(valor > 180)
+
+           if(valor > 180) // en caso de ser mayor a 180°, se satura
            {
             valor = 180;
             mostrar[0] = 1;
@@ -91,7 +97,8 @@ uint8_t* G10_uart_procesar(){
            }
          }
 
-         angulo = 300 - ((float)valor/15)*19;
+         angulo = 300 - ((float)valor/15)*19; //  se convierte el valor numerico del angulo a un valor
+                                              // valido para controlar el servo con PWM.
          __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_2, angulo);
 
          return mostrar;

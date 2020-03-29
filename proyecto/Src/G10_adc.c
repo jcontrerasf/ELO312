@@ -32,12 +32,12 @@ int G10_adc_leer_brillo(ADC_HandleTypeDef *hadc)
 
   adc_val = HAL_ADC_GetValue(hadc);
   brillo = 1960 - (adc_val*slope + offset);
-  brillo_int = (int)brillo;
-  if (brillo_int > 1960)
+  brillo_int = (int)brillo; //se convierte a int
+  if (brillo_int > 1960) //en caso de ser mayor, se satura a 1960
   {
     brillo_int = 1960;
   }
-  if (brillo_int < 1)
+  if (brillo_int < 1) //en caso de ser menor, se satura a 0
   {
     brillo_int = 0;
   }
