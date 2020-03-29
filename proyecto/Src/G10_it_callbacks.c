@@ -1,5 +1,5 @@
 /*
- * it_callbacks.c
+ * G10_it_callbacks.c
  *
  *  Created on: 23-03-2020
  *      Author: Grupo 10 - Paralelo 1 ELO312 2019-2
@@ -15,7 +15,7 @@
  * Este archivo contiene las funciones que se ejecutan cuando ocurren las interrupciones
  */
 
-#include "it_callbacks.h"
+#include "G10_it_callbacks.h"
 
 
 int brillo = 0;
