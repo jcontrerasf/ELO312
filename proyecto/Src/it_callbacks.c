@@ -17,22 +17,23 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   {
     contador = 0;
   }
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
   //prender un digito a la vez
   switch (contador) {
     case 0:
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 0);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 0);
-      break;
-    case 1:
       __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 0);
       __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 1960);
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 0);
+      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 1960);
       break;
-    case 2:
-      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 0);
+    case 1:
+      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
       __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 0);
       __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 1960);
+      break;
+    case 2:
+      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 1960);
+      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 1960);
+      __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4, 0);
       break;
     default:
       __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 0);

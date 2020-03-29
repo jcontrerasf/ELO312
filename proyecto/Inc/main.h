@@ -80,7 +80,9 @@ void Error_Handler(void);
 #define decena_GPIO_Port GPIOB
 #define unidad_Pin GPIO_PIN_1
 #define unidad_GPIO_Port GPIOB
-#define g_Pin GPIO_PIN_6
+#define f_Pin GPIO_PIN_6
+#define f_GPIO_Port GPIOC
+#define g_Pin GPIO_PIN_7
 #define g_GPIO_Port GPIOC
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA

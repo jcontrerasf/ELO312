@@ -5025,3 +5025,384 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-24 21:08:50.345
+!MESSAGE Unloading product manager
+!SESSION 2020-03-26 21:21:34.252 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CL
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-26 21:21:51.702
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-26 21:21:51.710
+!MESSAGE OS info: Windows 10, 10.0, x86
+
+!ENTRY TrueSTUDIO 1 0 2020-03-26 21:21:59.706
+!MESSAGE Target: STM32, Version: 9.3.0, Build date: 20190212-0734, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.3.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2020-03-26 21:21:59.708
+!MESSAGE Workspace: C:\Users\julio\Desktop\Universidad\ELO312\lab1marzo
+
+!ENTRY org.eclipse.jface 2 0 2020-03-26 21:22:00.703
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-26 21:22:00.703
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10704a5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1682397,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-26 21:22:03.371
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.437629770' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-26 21:22:03.377
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.1961070068' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-26 21:22:03.380
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.811226106' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-26 21:22:03.844
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.1101186819' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-26 21:22:03.846
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.991580835' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-26 21:22:03.848
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.1791108912' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2020-03-26 21:22:06.120
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2020-03-26 21:22:06.162
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-26 21:22:06.601
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\julio'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-27 01:02:59.276
+!MESSAGE Unloading product manager
+!SESSION 2020-03-27 20:11:57.846 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CL
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-27 20:15:32.389
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-27 20:15:32.397
+!MESSAGE OS info: Windows 10, 10.0, x86
+
+!ENTRY TrueSTUDIO 1 0 2020-03-27 20:15:35.099
+!MESSAGE Target: STM32, Version: 9.3.0, Build date: 20190212-0734, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.3.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2020-03-27 20:15:35.101
+!MESSAGE Workspace: C:\Users\julio\Desktop\Universidad\ELO312\lab1marzo
+
+!ENTRY org.eclipse.jface 2 0 2020-03-27 20:15:36.232
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-27 20:15:36.232
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@41848,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@97ead6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:39.212
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.37082049' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:40.417
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.1534711670' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:40.420
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.836427844' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:40.902
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.162797056' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:40.905
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.12133350' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:40.908
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.1152939555' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2020-03-27 20:15:43.254
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2020-03-27 20:15:43.287
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-27 20:15:43.551
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\julio'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:43.879
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.general.runtimelib.1341016506' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:43.901
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.mcu.331953468' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:43.904
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.vendor.476284571' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:43.933
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.general.runtimelib.2051018014' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:43.935
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.mcu.1370310119' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:43.938
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.vendor.1533932694' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.046
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.1636981414' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.049
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.410652328' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.051
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.404796788' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.078
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.163754074' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.081
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.961192230' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.083
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.338044370' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.246
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1748094243' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.249
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.2026233110' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.251
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.736069309' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.272
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.1510144408' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.274
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.2119049721' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.276
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.94340164' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.345
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.general.runtimelib.1466579704' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.347
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.mcu.1111520491' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.350
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.vendor.2126583372' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.373
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.general.runtimelib.1224210693' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.375
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.mcu.943921382' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:44.377
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.vendor.752740919' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:51.900
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.648399514' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:51.902
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.589564501' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:51.905
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.1910200919' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:51.926
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.472518803' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:51.928
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.1833196968' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-27 20:15:51.930
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.458501320' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-27 20:54:17.626
+!MESSAGE Unloading product manager
+!SESSION 2020-03-28 19:27:19.463 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CL
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-28 19:31:40.432
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2020-03-28 19:31:40.476
+!MESSAGE OS info: Windows 10, 10.0, x86
+
+!ENTRY TrueSTUDIO 1 0 2020-03-28 19:31:48.292
+!MESSAGE Target: STM32, Version: 9.3.0, Build date: 20190212-0734, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.3.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2020-03-28 19:31:48.297
+!MESSAGE Workspace: C:\Users\julio\Desktop\Universidad\ELO312\lab1marzo
+
+!ENTRY org.eclipse.jface 2 0 2020-03-28 19:31:50.728
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-28 19:31:50.728
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@602333,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1376bae,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 19:31:57.580
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.740028976' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 19:31:57.596
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.1739200472' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 19:31:57.602
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.222905890' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 19:31:58.730
+!MESSAGE proyecto needs property 'com.atollic.truestudio.general.runtimelib.550524535' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 19:31:58.735
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.mcu.571630662' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 19:31:58.740
+!MESSAGE proyecto needs property 'com.atollic.truestudio.toolchain_options.vendor.1501469210' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2020-03-28 19:32:04.009
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2020-03-28 19:32:04.096
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-28 19:32:04.605
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\julio'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:50.930
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.general.runtimelib.154989123' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:50.935
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.mcu.120059822' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:50.939
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.vendor.1045838606' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:50.994
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.general.runtimelib.59372273' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:50.999
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.mcu.1099994494' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.004
+!MESSAGE sesion3timers needs property 'com.atollic.truestudio.toolchain_options.vendor.1269231011' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.103
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.2059098993' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.109
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.788933530' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.113
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.1207472027' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.169
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.general.runtimelib.472826850' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.174
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.mcu.1749382202' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.179
+!MESSAGE sesion4 needs property 'com.atollic.truestudio.toolchain_options.vendor.322074966' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.413
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.2007911538' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.418
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1671866109' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.422
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1165142269' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.467
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.general.runtimelib.260056413' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.472
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.mcu.1088276546' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.475
+!MESSAGE sesion5 needs property 'com.atollic.truestudio.toolchain_options.vendor.1589981458' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.553
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.general.runtimelib.498040564' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.558
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.mcu.1265058472' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.563
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.vendor.1590025998' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.615
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.general.runtimelib.1873730640' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.621
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.mcu.1750976557' fixed. Fixing to 'STM32L476RG'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2020-03-28 20:50:51.626
+!MESSAGE sesion5Duplex needs property 'com.atollic.truestudio.toolchain_options.vendor.1563481232' fixed. Fixing to 'STMicroelectronics'.
