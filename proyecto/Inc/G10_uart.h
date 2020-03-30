@@ -21,7 +21,9 @@ extern uint8_t data;
 
 
 //prototipos de funciones
-int G10_uart_es_num(int);
+uint8_t G10_uart_es_num(uint8_t);
+uint8_t G10_uart_recibir(void);
+uint8_t* G10_uart_procesar(void);
 
 
 

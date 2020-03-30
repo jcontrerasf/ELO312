@@ -8,7 +8,7 @@
 #ifndef G10_7SEGMENTOS_H_
 #define G10_7SEGMENTOS_H_
 
-//includes
+// includes
 #include "stdint.h"
 #include "gpio.h"
 #include "main.h"
@@ -16,8 +16,8 @@
 #include "tim.h"
 
 
-//Prototipos de funciones
-void G10_7segmentos_mostrar(GPIO_TypeDef*, uint8_t, int);
+// Prototipos de funciones
+void G10_7segmentos_mostrar(GPIO_TypeDef*, uint8_t*, int);
 
 
 

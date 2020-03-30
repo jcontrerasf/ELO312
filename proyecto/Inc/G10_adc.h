@@ -8,13 +8,15 @@
 #ifndef G10_ADC_H_
 #define G10_ADC_H_
 
+// includes
 #include "stdint.h"
 #include "gpio.h"
 #include "main.h"
 #include "adc.h"
 
 
-int G10_adc_leer_brillo(ADC_HandleTypeDef);
+// Prototipos de funciones
+int G10_adc_leer_brillo(ADC_HandleTypeDef*);
 
 
 

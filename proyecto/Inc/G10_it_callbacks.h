@@ -14,5 +14,8 @@
 #include "adc.h"
 #include "tim.h"
 #include "gpio.h"
+#include "G10_uart.h"
+#include "G10_adc.h"
+#include "G10_7segmentos.h"
 
 #endif /* IT_CALLBACKS_H_ */
