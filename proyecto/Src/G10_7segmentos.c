@@ -15,25 +15,25 @@
 * Este modelo es de catodo(negativo) comun, por lo tanto, para encender
 * cada segmento se debe setear un 1, mientras que para activar cada digito, estos deben ir a 0V.
 * A continuacion se muestra el nombre de cada segmento.
-    ___________
-   /     a     \
-  _\___________/ _
-/   \          /   \
-|   |          |   |
-| f |          |   |
-|   |          | b |
-|   |          |   |
-\ _ /__________\ _ /
-   /     g     \
-  _\___________/ _
-/   \          /   \
-|   |          |   |
-| e |          |   |
-|   |          | c |
-|   |          |   |
-\ _ /__________\ _ /
-    /     d    \
-    \__________/
+		___________
+	   /     a     \
+	  _\___________/ _
+	/   \          /   \
+	|   |          |   |
+	| f |          |   |
+	|   |          | b |
+	|   |          |   |
+	\ _ /__________\ _ /
+	   /     g     \
+	  _\___________/ _
+	/   \          /   \
+	|   |          |   |
+	| e |          |   |
+	|   |          | c |
+	|   |          |   |
+	\ _ /__________\ _ /
+		/     d    \
+		\__________/
 
 
 * Para reducir la cantidad de instrucciones se decide usar un solo puerto para los segmentos.
@@ -120,4 +120,3 @@ void G10_7segmentos_mostrar(GPIO_TypeDef* GPIOx, uint8_t* mostrar , int brillo)
       //se incrementa el contador para cambiar de digito en la siguiente llamada
       contador++;
 }
-

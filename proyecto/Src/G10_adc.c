@@ -5,14 +5,16 @@
  *      Author: Grupo 10 - Paralelo 1 ELO312 2019-2
 
 
-     _    ____   ____
-    / \  |  _ \ / ___|
-   / _ \ | | | | |
-  / ___ \| |_| | |___
- /_/   \_\____/ \____|
+		 _    ____   ____
+		/ \  |  _ \ / ___|
+	   / _ \ | | | | |
+	  / ___ \| |_| | |___
+	 /_/   \_\____/ \____|
 
 
  */
+
+#include "G10_adc.h"
 
 #define offset -25658.2
 #define slope 8.90909
@@ -24,6 +26,7 @@
  * @param hadc: ADC handle
  * @retval brillo en variable de tipo int en el rango valido para G10_7segmentos_mostrar().
  */
+
 int G10_adc_leer_brillo(ADC_HandleTypeDef *hadc)
 {
   static volatile uint16_t adc_val;
@@ -32,16 +35,16 @@ int G10_adc_leer_brillo(ADC_HandleTypeDef *hadc)
 
   adc_val = HAL_ADC_GetValue(hadc);
   brillo = 1960 - (adc_val*slope + offset);
-  brillo_int = (int)brillo; //se convierte a int
-  if (brillo_int > 1960) //en caso de ser mayor, se satura a 1960
+  brillo_int = (int)brillo; // Se convierte a int
+
+  if (brillo_int > 1960) // En caso de ser mayor, se satura a 1960
   {
     brillo_int = 1960;
   }
-  if (brillo_int < 1) //en caso de ser menor, se satura a 0
+  if (brillo_int < 1) // En caso de ser menor, se satura a 0
   {
     brillo_int = 0;
   }
   return brillo_int;
 }
-
 

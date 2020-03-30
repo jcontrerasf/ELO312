@@ -21,14 +21,13 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
-#include "dac.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "G10_it_callbacks.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,14 +94,26 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_ADC1_Init();
-  MX_DAC1_Init();
   MX_TIM3_Init();
+  MX_TIM4_Init();
+
   /* USER CODE BEGIN 2 */
+
   HAL_TIM_Base_Start_IT(&htim2);
 
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+  HAL_ADC_Start_IT(&hadc1);
+
+  HAL_UART_Receive_IT(&huart2, &data, 1);
+
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);			// centena	PA7
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);			// decena	PB0
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);			// unidad	PB1
+
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);			// PB7
+
+  __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_2, 300);	// 0°
+
+  HAL_PWR_EnterSLEEPMode(PWR_LOWPOWERREGULATOR_ON, PWR_SLEEPENTRY_WFI);
   /* USER CODE END 2 */
 
   /* Infinite loop */
